@@ -1,21 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
 
 :root {
     /* ------ Color Primary ------ */
-    --green: hsl(75, 94%, 57%);
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
 
     /* ------ Color Neutral ------ */
     --white: hsl(0, 0%, 100%);
-    --grey: hsl(0, 0%, 20%);
-    --dark-grey: hsl(0, 0%, 12%);
-    --off-black: hsl(0, 0%, 8%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
 
     /* ------ Font ------ */
     --font-regular: 400;
     --font-semiBold: 600;
     --font-bold: 700;
-    --font-inter: 'Inter', sans-serif;
-    --font-size: 14px;
+    --font-outfit: 'Outfit', sans-serif;;
+    --font-young: 'Young Serif', serif;;
+    --font-size: 16px;
 }
 
 /* ------ Principal ------ */
@@ -35,7 +39,7 @@ main {
     width: 100vw;
 }
 
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -44,67 +48,11 @@ main {
     width: 280px;
     padding: 25px;
     background: var(--dark-grey);
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 
 /* ------ Card ------ */
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.photo{
-    background-image: url(../assets/images/avatar-jessica.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 90px;
-    width: 90px;
-    border-radius: 50%;
-}
-
-.card h1{
-    font-size: 20px;
-    font-weight: var(--font-semiBold);
-    letter-spacing: 2px;
-    margin-top: 30px;
-}
-
-.card h2{
-    font-weight: var(--font-semiBold);
-    color: var(--green);
-    margin-top: 18px;
-}
-
-.card p{
-    margin-top: 30px;
-}
-
-/* ------ Btn ------ */
-.btn{
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    gap: 15px;
-}
-
-.btn button{
-    background: var(--grey);
-    height: 45px;
-    width: 280px;
-    border: none;
-    border-radius: 10px;
-    color: var(--white);
-    font-weight: var(--font-bold);
-}
-
-/* ------ Hover ------ */
-.btn button:hover{
-    background: var(--green);
-    cursor: pointer;
-    color: var(--dark-grey);
-}
 
 /* -------- Attribution -------- */
 .attribution {
@@ -123,17 +71,6 @@ main {
 }
 
 /* ------ Responsivo ------ */
-@media only screen and (min-width: 390px) {
+/* @media only screen and (min-width: 390px) {
 
-    /* ------ Principal ------ */
-    .container {
-        height: 530px;
-        width: 300px;
-        padding: 40px;
-    }
-   
-    .btn button{
-        height: 47px;
-        width: 300px;
-    }
-}
+} */
