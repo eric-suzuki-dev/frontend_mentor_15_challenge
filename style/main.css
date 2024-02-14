@@ -24,34 +24,87 @@
 
 /* ------ Principal ------ */
 body {
-    background: var(--off-black);
+    background: var(--white);
     font-size: var(--font-size);
     font-weight: var(--font-regular);
-    font-family: var(--font-inter);
-    color: var(--white);
+    color: var(--dark-charcoal);
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 }
 
-/* .container {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 530px;
-    width: 280px;
-    padding: 25px;
-    background: var(--dark-grey);
-    border-radius: 10px; */
+    height: 100%;
+    width: 375px;
+}
+
+/* ------ Imagem ------ */
+.imagem{
+    background-image: url(../assets/images/image-omelette.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 375px;
+    height: 175px;
 }
 
 /* ------ Card ------ */
+.card{
+    width: 315px;
+    padding: 0 30px;
+}
+
+/* ------ omelette ------ */
+.omelette{
+    width: 215px;
+    width: 315px;
+    margin-top: 48px;
+}
+
+.omelette h1{
+    font-family: var(--font-young);
+    font-weight: var(--font-regular);
+    font-size: 36px;
+}
+
+.omelette p {
+    font-family: var(--font-outfit);
+    font-weight: var(--font-regular);
+    color: var(--wenge-brown);
+    margin-top: 25px;
+    line-height: 24px;
+}
+
+/* ------ preparation ------ */
+.preparation{
+    width: 215px;
+    width: 315px;
+    margin-top: 45px;
+    /* background-color: rgba(var(--dark-raspberry), 0.5); */
+}
+
+
+.omelette h1{
+    font-family: var(--font-young);
+    font-weight: var(--font-regular);
+    font-size: 36px;
+}
+
+.omelette p {
+    font-family: var(--font-outfit);
+    font-weight: var(--font-regular);
+    color: var(--wenge-brown);
+    margin-top: 25px;
+    line-height: 24px;
+}
 
 
 /* -------- Attribution -------- */
