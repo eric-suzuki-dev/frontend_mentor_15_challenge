@@ -17,8 +17,10 @@
     --font-regular: 400;
     --font-semiBold: 600;
     --font-bold: 700;
-    --font-outfit: 'Outfit', sans-serif;;
-    --font-young: 'Young Serif', serif;;
+    --font-outfit: 'Outfit', sans-serif;
+    ;
+    --font-young: 'Young Serif', serif;
+    ;
     --font-size: 16px;
 }
 
@@ -47,8 +49,13 @@ main {
     width: 375px;
 }
 
+hr {
+    margin: 36px 0;
+    width: 100%;
+}
+
 /* ------ Imagem ------ */
-.imagem{
+.imagem {
     background-image: url(../assets/images/image-omelette.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -57,19 +64,19 @@ main {
 }
 
 /* ------ Card ------ */
-.card{
+.card {
     width: 315px;
     padding: 0 30px;
 }
 
 /* ------ omelette ------ */
-.omelette{
+.omelette {
     width: 215px;
     width: 315px;
     margin-top: 48px;
 }
 
-.omelette h1{
+.omelette h1 {
     font-family: var(--font-young);
     font-weight: var(--font-regular);
     font-size: 36px;
@@ -84,29 +91,160 @@ main {
 }
 
 /* ------ preparation ------ */
-.preparation{
-    width: 215px;
-    width: 315px;
+.preparation {
+    height: 150px;
+    width: 265px;
+    border-radius: 15px;
+    padding: 25px;
     margin-top: 45px;
-    /* background-color: rgba(var(--dark-raspberry), 0.5); */
+    background-color: var(--rose-white);
+    font-family: var(--font-outfit);
 }
 
 
-.omelette h1{
+.preparation h2 {
+    font-weight: var(--font-bold);
+    font-size: 18px;
+    color: var(--dark-raspberry);
+}
+
+.preparation ul {
+    list-style-type: disc;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: var(--dark-raspberry);
+}
+
+.preparation ul li p {
+    color: var(--wenge-brown);
+    margin-right: 25px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.preparation b {
+    font-weight: var(--font-bold);
+}
+
+/* ------ ingredients ------ */
+.ingredients {
+    width: 315px;
+    height: 230px;
+    font-family: var(--font-outfit);
+    color: var(--wenge-brown);
+}
+
+.ingredients h3 {
+    font-size: 30px;
     font-family: var(--font-young);
     font-weight: var(--font-regular);
-    font-size: 36px;
+    color: var(--nutmeg);
+    margin-top: 40px;
 }
 
-.omelette p {
+.ingredients ul {
+    list-style-type: disc;
+    margin-top: 30px;
+    padding-left: 20px;
+    color: var(--nutmeg);
+}
+
+.ingredients ul li p {
+    color: var(--wenge-brown);
+    margin-bottom: 12px;
+    line-height: 20px;
+}
+
+
+/* ------ instructions ------ */
+.instructions {
+    height: 670px;
+    width: 315px;
+    /* padding: 0 25px; */
+}
+
+.instructions h4 {
+    font-size: 30px;
+    font-family: var(--font-young);
+    font-weight: var(--font-regular);
+    color: var(--nutmeg);
+}
+
+.instructions ol {
+    list-style-type: decimal;
+    color: var(--nutmeg);
+    font-family: var(--font-outfit);
+    font-weight: var(--font-semiBold);
+    margin-top: 30px;
+    padding:0 20px;
+}
+
+.instructions ol li p {
+    color: var(--wenge-brown);
+    font-weight: var(--font-regular);
+    margin-left: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+.instructions ol li p b{
+    font-weight: var(--font-bold);
+}
+
+/* ------ nutrition ------ */
+.nutrition{
+    height: 300px;
+    width: 100%;
+}
+
+.nutrition h5 {
+    font-size: 30px;
+    font-family: var(--font-young);
+    font-weight: var(--font-regular);
+    color: var(--nutmeg);
+}
+
+.nutrition p{
+    color: var(--wenge-brown);
     font-family: var(--font-outfit);
     font-weight: var(--font-regular);
-    color: var(--wenge-brown);
-    margin-top: 25px;
+    margin: 30px 0px;
+    padding-right: 20px;
     line-height: 24px;
 }
 
+.nutrition hr{
+    margin-top: 15px;
+    margin-bottom: 0;
+    width: 100%;
+}
 
+/* ------ calories ------ */
+.nutrition_calories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-self: flex-start; */
+    /* justify-items: flex-start; */
+}
+
+.nutrition_calories span{
+    font-family: var(--font-outfit);
+    font-weight: var(--font-regular);
+    color: var(--wenge-brown);
+    margin-left: 30px;
+   text-align: right;
+}
+
+.nutrition_calories b{
+    position: relative;
+    font-family: var(--font-outfit);
+    font-weight: var(--font-bold);
+    color: var(--nutmeg);
+    margin-right: 5px;
+    text-align: right;
+}
 /* -------- Attribution -------- */
 .attribution {
     position: fixed;
@@ -120,7 +258,7 @@ main {
 }
 
 .attribution a {
-    color: var(--white);
+    color: var(--dark-raspberry);
 }
 
 /* ------ Responsivo ------ */
