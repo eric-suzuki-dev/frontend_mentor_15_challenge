@@ -160,7 +160,7 @@ hr {
 .instructions {
     height: 670px;
     width: 315px;
-    /* padding: 0 25px; */
+    font-family: var(--font-outfit);
 }
 
 .instructions h4 {
@@ -173,7 +173,7 @@ hr {
 .instructions ol {
     list-style-type: decimal;
     color: var(--nutmeg);
-    font-family: var(--font-outfit);
+
     font-weight: var(--font-semiBold);
     margin-top: 30px;
     padding:0 20px;
@@ -193,8 +193,10 @@ hr {
 
 /* ------ nutrition ------ */
 .nutrition{
-    height: 300px;
+    height: 350px;
     width: 100%;
+    font-family: var(--font-outfit);
+    font-weight: var(--font-regular);
 }
 
 .nutrition h5 {
@@ -206,45 +208,39 @@ hr {
 
 .nutrition p{
     color: var(--wenge-brown);
-    font-family: var(--font-outfit);
-    font-weight: var(--font-regular);
-    margin: 30px 0px;
+    margin: 30px 0px 15px 0;
     padding-right: 20px;
     line-height: 24px;
 }
 
-.nutrition hr{
-    margin-top: 15px;
-    margin-bottom: 0;
+.nutrition table{
+    display: table;
     width: 100%;
-}
-
-/* ------ calories ------ */
-.nutrition_calories{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* align-self: flex-start; */
-    /* justify-items: flex-start; */
-}
-
-.nutrition_calories span{
-    font-family: var(--font-outfit);
-    font-weight: var(--font-regular);
+    border-collapse: collapse;
+    /* border-spacing: 2px; */
+    /* border-color: rgb(233, 0, 0); */
     color: var(--wenge-brown);
-    margin-left: 30px;
-   text-align: right;
+    padding-bottom: 45px;
 }
 
-.nutrition_calories b{
-    position: relative;
-    font-family: var(--font-outfit);
+.nutrition table tr td{
+    padding: 15px 0;
+    border-bottom: 1px solid var(--dark-charcoal);
+}
+
+.nutrition table tr td:first-child{
+    padding-left: 30px;
+}
+
+.nutrition table tr:last-child{
+    border-bottom: none;
+}
+
+.nutrition table tr td b{
     font-weight: var(--font-bold);
     color: var(--nutmeg);
-    margin-right: 5px;
-    text-align: right;
 }
+
 /* -------- Attribution -------- */
 .attribution {
     position: fixed;
